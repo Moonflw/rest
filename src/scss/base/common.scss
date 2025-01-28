@@ -1,32 +1,46 @@
+// rem sccs code
+@use "sass:math";
+
+@function rem($screen) {
+  @return math.div(100vw, $screen) * 10;
+}
+html,
+body {
+  font-size: rem(1920);
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
 //* для lenis
 
 html.lenis,
 html.lenis body {
-    height: auto;
+  height: auto;
 }
 
 .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
+  scroll-behavior: auto !important;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-    overflow-y: scroll;
+  overscroll-behavior: contain;
+  overflow-y: scroll;
 }
 .lenis [data-lenis-prevent] {
-    overscroll-behavior: contain;
-    overflow-y: scroll;
+  overscroll-behavior: contain;
+  overflow-y: scroll;
 }
 
 .lenis.lenis-stopped {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .lenis.lenis-scrolling iframe {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 body {
-    background-color: black;
+  background-color: var(--light-color);
 }
-
