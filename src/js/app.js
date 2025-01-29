@@ -21,6 +21,9 @@ window.addEventListener("load", () => {
 
     validationPhoneInput()
     intro()
+    invest()
+    developer()
+    location()
 
     // Zoom Site Disabled
     document.addEventListener('gesturestart', function (e) {
