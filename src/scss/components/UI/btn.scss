@@ -7,7 +7,6 @@
 
   &__wrapper {
     height: 100%;
-    
   }
 
   // .btn__text
@@ -27,7 +26,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #000;
+      // background-color: #000;
       z-index: 1;
       border-radius: 20px;
       transition: width 0.3s ease;
@@ -81,6 +80,9 @@
   &.dark {
     .btn__text {
       background-color: #000;
+      &::after {
+        background-color: #000;
+      }
     }
     .btn__icon {
       background-color: #000;
@@ -102,6 +104,9 @@
   &.white {
     .btn__text {
       background-color: #fff;
+      &::after {
+        background-color: #fff;
+      }
     }
     .btn__icon {
       background-color: #fff;
