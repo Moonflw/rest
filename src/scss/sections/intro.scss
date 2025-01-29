@@ -35,12 +35,23 @@
     // position: static;
     width: 100%;
     padding-top: 26rem;
+    @media (max-width: 768px) {
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   // .intro__title
 
   &__title {
     margin-bottom: 7px;
+    @media (max-width: 768px) {
+      margin-bottom: 21px;
+    }
   }
 
   // .intro__title-text
@@ -52,6 +63,12 @@
     font-weight: 600;
     font-size: 9.6rem;
     color: #fff;
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
+    @media (max-width: 388px) {
+      font-size: 40px;
+    }
   }
 
   // .intro__subtitle
@@ -59,6 +76,10 @@
   &__subtitle {
     margin-bottom: 4rem;
     max-width: 65rem;
+    @media (max-width: 768px) {
+      max-width: 300px;
+      margin-bottom: 21px;
+    }
   }
 
   // .intro__subtitle-text
@@ -69,6 +90,13 @@
     font-size: 2.8rem;
     line-height: 100%;
     color: rgba(255, 255, 255, 0.85);
+    @media (max-width: 768px) {
+      font-size: 16px;
+      text-align: center;
+    }
+    @media (max-width: 388px) {
+      font-size: 14px;
+    }
   }
 
   // .intro__btn
@@ -85,6 +113,22 @@
     display: flex;
     align-items: center;
     gap: 7rem;
+    @media (max-width: 768px) {
+      position: static;
+      gap: 35px;
+      margin-top: 100px;
+    }
+    @media (max-width: 510px) {
+      gap: 0px;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @media (max-width: 426px) {
+      // gap: 10px;
+    }
+    @media (max-width: 388px) {
+      // gap: 15px;
+    }
   }
 
   // .intro__item
@@ -96,6 +140,12 @@
     width: 1px;
     background-color: rgba(255, 255, 255, 0.5);
     height: 11.4rem;
+    @media (max-width: 768px) {
+      height: 70px;
+    }
+    @media (max-width: 388px) {
+      height: 50px;
+    }
   }
 
   // .intro__item-top
@@ -112,6 +162,12 @@
     font-weight: 400;
     font-size: 4.8rem;
     color: #fff;
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+    @media (max-width: 388px) {
+      font-size: 18px;
+    }
   }
 
   // .intro__item-bot
@@ -128,5 +184,11 @@
     font-size: 2rem;
     line-height: 100%;
     color: rgba(255, 255, 255, 0.8);
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media (max-width: 388px) {
+      font-size: 10px;
+    }
   }
 }
