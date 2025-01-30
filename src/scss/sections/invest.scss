@@ -93,9 +93,9 @@
 
 @media (max-width: 768px) {
     .invest {
-
+        padding: 60px 0;
         &__desc {
-            padding: 60px 0 26px;
+            padding: 0px 0 26px;
             gap: 20px;
 
             &-title {
@@ -109,16 +109,12 @@
             }
         }
 
-
-
         &__list {
             grid-template-columns: repeat(1, 1fr);
             gap: 5px;
             position: relative;
 
             &-item {
-
-
 
                 padding: 15px 15px 20px 15px;
 
