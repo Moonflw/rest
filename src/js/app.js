@@ -2,6 +2,9 @@
 import { plugins } from "./components/plugins.js";
 import { lenis } from "./components/lenis.js"
 import { intro } from "./sections/intro.js";
+import { invest } from "./sections/invest.js";
+import { developer } from "./sections/developer.js";
+import { location } from "./sections/location.js";
 import { validationPhoneInput } from "./components/validation-phone-input.js";
 
 window.addEventListener("onbeforeunload", function () {

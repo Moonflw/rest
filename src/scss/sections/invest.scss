@@ -1,9 +1,174 @@
 .invest {
     padding: 6rem 0;
     width: 100vw;
-    overflow-y: hidden;
+
     &__desc {
-        text-align: center;
         padding-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+
+        &-title {
+            font-family: var(--fontJost);
+            font-weight: 300;
+            line-height: 100%;
+            font-size: 2.2rem;
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        &-text {
+            font-family: var(--fontJost);
+            font-weight: 300;
+            line-height: 110%;
+            font-size: 2.2rem;
+            color: #000;
+            text-align: center;
+            max-width: 97.7rem;
+            width: 100%;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.7rem;
+
+        &-item {
+            border: 0.80px solid #fff;
+            border-radius: 25px;
+            background: #000;
+
+            &-title {
+                font-family: var(--fontRel);
+                font-size: 2.2rem;
+                color: #fff;
+                font-weight: 600;
+                text-align: center;
+                line-height: 100%;
+                padding: 2.8rem 1.6rem 1.6rem;
+            }
+
+            &-text-holder {
+
+                color: rgba(255, 255, 255, 0.7);
+                padding: 0 3.4rem 2.5rem 5.3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.7rem;
+
+
+            }
+
+            &-text {
+                position: relative;
+                font-size: 2rem;
+                font-family: var(--fontJost);
+                font-weight: 400;
+                line-height: 100%;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background: #fff;
+                    width: 6px;
+                    height: 7px;
+                    border-radius: 50%;
+                    left: -2.2rem;
+                    top: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .invest {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .invest {
+
+        &__desc {
+            padding: 60px 0 26px;
+            gap: 20px;
+
+            &-title {
+                font-size: 15px;
+            }
+
+            &-text {
+                max-width: 345px;
+                font-size: 16px;
+                padding-top: 4px;
+            }
+        }
+
+
+
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5px;
+            position: relative;
+
+            &-item {
+
+
+
+                padding: 15px 15px 20px 15px;
+
+                &-title {
+                    font-size: 16px;
+                    padding: 0;
+                }
+
+                &-text-holder {
+                    padding: 0px 15px 0px 15px;
+                    max-height: 0;
+                    opacity: 0;
+                    transition: max-height 0.4s ease-out, opacity 0.5s ease-out, ;
+                    gap: 5px;
+                    overflow: hidden;
+                }
+
+                &-text {
+                    font-size: 14px;
+
+                    &::after {
+                        width: 4px;
+                        height: 5px;
+                        left: -15px;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+.invest__list-item.open .invest__list-item-text-holder {
+    max-height: 220px;
+    opacity: 1;
+    transform: translateY(5px);
+    transition: max-height 0.4s ease-in, opacity 0.3s ease-in;
+}
+
+
+
+.titles {
+    font-family: var(--fontRel);
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000515;
+
+    @media (max-width: 768px) {
+        font-size: 28px;
     }
 }
