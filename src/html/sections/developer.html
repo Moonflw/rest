@@ -51,13 +51,97 @@
     </div>
     <div class="developer__right">
       <h3 class="developer__right-title">Register your interest</h3>
-      <p class="developer__right-desc">Contact us to get updated information about the development and availabilities</p>
-      <form action="" class="developer__right-form">
-        <input type="text" placeholder="Your name" />
-        <input type="text" placeholder="Your e-mail" />
-        <input type="text" placeholder="Phone number" />
-        <button type="submit">Submit</button>
+      <p class="developer__right-desc">
+        Contact us to get updated information about the development and
+        availabilities
+      </p>
+      <form action="" class="developer__right-form ">
+        <div class="developer__right-form-input-wrap">
+          <input
+            class="developer__right-form-input"
+            type="text"
+            placeholder="Your name"
+          />
+        </div>
+        <div class="developer__right-form-input-wrap">
+          <input
+            class="developer__right-form-input"
+            type="mail"
+            placeholder="Your e-mail"
+          />
+        </div>
+        <div class="developer__right-form-input-wrap">
+          <input
+            class="developer__right-form-input"
+            type="number"
+            placeholder="Phone number"
+          />
+        </div>
+        <div class="developer__right-form-btns">
+          <div class="developer__right-form-socials">
+            <div class="developer__right-form-socials-wrap">
+              @@include('../components/UI/tg.html',{'socialMode':'social-dark','socialSize':'social-big'})
+            </div>
+            <div class="developer__right-form-socials-wrap">
+              @@include('../components/UI/wp.html',{'socialMode':'social-dark','socialSize':'social-big'})
+            </div>
+          </div>
+          <div class="developer__right-form-btn">
+            @@include('../components/UI/btn.html',{'btnText':'Request','btnMode':'dark','btnClass':'intro-btn'})
+          </div>
+        </div>
       </form>
+      <p class="developer__right-info">Call us now to get expert assistance!</p>
+      <a href="#" class="developer__right-contact">+971 56 XXX-XX-XX</a>
+    </div>
+  </div>
+  <div class="location__holder">
+    <img src="../../img/location/location.webp" alt="" class="location__holder-img">
+    <img src="../../img/location/location-mob.webp" alt="" class="location__holder-img-mob">
+    <div class="developer__right mob">
+      <h3 class="developer__right-title">Register your interest</h3>
+      <p class="developer__right-desc">
+        Contact us to get updated information about the development and
+        availabilities
+      </p>
+      <form action="" class="developer__right-form ">
+        <div class="developer__right-form-input-wrap">
+          <input
+            class="developer__right-form-input"
+            type="text"
+            placeholder="Your name"
+          />
+        </div>
+        <div class="developer__right-form-input-wrap">
+          <input
+            class="developer__right-form-input"
+            type="mail"
+            placeholder="Your e-mail"
+          />
+        </div>
+        <div class="developer__right-form-input-wrap">
+          <input
+            class="developer__right-form-input"
+            type="number"
+            placeholder="Phone number"
+          />
+        </div>
+        <div class="developer__right-form-btns">
+          <div class="developer__right-form-socials">
+            <div class="developer__right-form-socials-wrap">
+              @@include('../components/UI/tg.html',{'socialMode':'social-dark','socialSize':'social-big'})
+            </div>
+            <div class="developer__right-form-socials-wrap">
+              @@include('../components/UI/wp.html',{'socialMode':'social-dark','socialSize':'social-big'})
+            </div>
+          </div>
+          <div class="developer__right-form-btn">
+            @@include('../components/UI/btn.html',{'btnText':'Request','btnMode':'dark','btnClass':'intro-btn'})
+          </div>
+        </div>
+      </form>
+      <p class="developer__right-info">Call us now to get expert assistance!</p>
+      <a href="#" class="developer__right-contact">+971 56 XXX-XX-XX</a>
     </div>
   </div>
 </section>
