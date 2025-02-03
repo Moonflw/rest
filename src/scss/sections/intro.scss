@@ -89,11 +89,11 @@
   // .intro__subtitle
 
   &__subtitle {
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
     max-width: 65rem;
     @media (max-width: 768px) {
       max-width: 300px;
-      margin-bottom: 21px;
+      // margin-bottom: 21px;
     }
   }
 
@@ -407,7 +407,7 @@
     margin-top: 1rem;
     font-family: var(--fontJost);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 100%;
     text-decoration: underline;
     text-decoration-skip-ink: none;
