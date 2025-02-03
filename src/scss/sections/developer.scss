@@ -118,7 +118,7 @@
         border-radius: 24px;
         max-width: 38.6rem;
         background: linear-gradient(82deg, #e9edf5 0%, #fff 38.5%, #fff 50%, #fff 60%, #fbf2e4 100%);
-
+        
         &-title {
             font-size: 3rem;
             color: #000;
@@ -170,7 +170,11 @@
                 display: flex;
                 gap: 1.6rem;
             }
-
+            
+        }
+        &-form-socials-wrap {
+            width: 4rem;
+            height: 4rem;
         }
 
         &-info {
