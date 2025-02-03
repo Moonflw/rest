@@ -1,6 +1,7 @@
 // import Swiper from "swiper";
 import { plugins } from "./components/plugins.js";
 import { lenis } from "./components/lenis.js";
+import { header } from "./components/header.js";
 import { intro } from "./sections/intro.js";
 import { invest } from "./sections/invest.js";
 import { developer } from "./sections/developer.js";
@@ -12,6 +13,7 @@ import { location } from "./sections/location.js";
 
 import { about } from "./sections/about.js";
 import { validationPhoneInput } from "./components/validation-phone-input.js";
+
 
 window.addEventListener("onbeforeunload", function () {
   window.scrollTo(0, 0);
@@ -28,6 +30,7 @@ window.addEventListener("load", () => {
   // Swiper.use([Navigation, Autoplay])
 
   validationPhoneInput();
+  header()
   intro();
   about();
   invest();
