@@ -6,6 +6,7 @@
 }
 html,
 body {
+  scroll-behavior: smooth;
   font-size: rem(1920);
 
   @media (max-width: 768px) {

@@ -6,10 +6,14 @@
           <button class="header__menu-btn">Menu</button>
           <div class="header__menu-navs-wrapper">
             <div class="header__menu-navs">
-              <button class="header__menu-nav">Home</button>
-              <button class="header__menu-nav">About</button>
-              <button class="header__menu-nav">Investments</button>
-              <button class="header__menu-nav">Location</button>
+              <a data-scroll="intro-scroll" class="header__menu-nav">Home</a>
+              <a data-scroll="about-scroll" class="header__menu-nav">About</a>
+              <a data-scroll="invest-scroll" class="header__menu-nav"
+                >Investments</a
+              >
+              <a data-scroll="developer-scroll" class="header__menu-nav"
+                >Location</a
+              >
             </div>
           </div>
         </div>
@@ -739,7 +743,10 @@
         <div class="header__social header__social-wp">
           @@include('./UI/wp.html',{'socialMode':'social-white','socialSize':'social-big'})
         </div>
-        <a href="#" class="header__social header__social-desc header__social-btn">
+        <a
+          href="#"
+          class="header__social header__social-desc header__social-btn"
+        >
           @@include('./UI/btn.html',{'btnText':'Contact Us','btnMode':'white','btnClass':'header-social-btn'})
         </a>
         <div class="header__social header__social-mob">

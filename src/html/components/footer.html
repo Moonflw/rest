@@ -2,10 +2,10 @@
   <div class="_container">
     <h2 class="footer__title">Get expert consultation</h2>
     <ul class="footer__list-anchor">
-      <li><a href="" class="footer__list-anchor-item">Home</a></li>
-      <li><a href="" class="footer__list-anchor-item">About</a></li>
-      <li><a href="" class="footer__list-anchor-item">Investments</a></li>
-      <li><a href="" class="footer__list-anchor-item">Location</a></li>
+      <li><a data-scroll="intro-scroll" class="footer__list-anchor-item">Home</a></li>
+      <li><a data-scroll="about-scroll" class="footer__list-anchor-item">About</a></li>
+      <li><a data-scroll="invest-scroll" class="footer__list-anchor-item">Investments</a></li>
+      <li><a data-scroll="developer-scroll" class="footer__list-anchor-item">Location</a></li>
     </ul>
     <div class="footer__list-contact">
       <a href="" class="footer__list-contact-item">
@@ -43,8 +43,7 @@
       </a>
     </div>
     <div class="footer__btn-mob">
-        @@include('../components/UI/btn.html',{'btnText':'Request','btnMode':'dark','btnClass':'intro-btn'})
-
+        @@include('../components/UI/btn.html',{'btnText':'Contact Us','btnMode':'dark','btnClass':'footer-btn main-popup'})
     </div>
   </div>
 </footer>
