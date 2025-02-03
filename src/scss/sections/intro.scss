@@ -102,9 +102,10 @@
   &__subtitle-text {
     font-family: var(--fontRel);
     font-weight: 300;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 100%;
     color: rgba(255, 255, 255, 0.85);
+    width: 100%;
     @media (max-width: 768px) {
       font-size: 16px;
       text-align: center;

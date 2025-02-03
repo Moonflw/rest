@@ -1,24 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-@@include('html/components/head.html',{ "title":"Orise Tower" })
+  @@include('html/components/head.html',{ "title":"Orise Tower" })
 
-<body>
+  <body>
     @@include('html/components/header.html')
 
     <main class="main">
-        @@include('html/sections/intro.html')
-        @@include('html/sections/about.html')
-        @@include('html/sections/invest.html')
-        @@include('html/sections/developer.html')
-        @@include('html/sections/location.html')
+      @@include('html/sections/intro.html')
+      @@include('html/sections/about.html')
+      @@include('html/sections/invest.html')
+      @@include('html/sections/developer.html')
+      @@include('html/sections/location.html')
     </main>
 
     @@include('html/components/footer.html')
     @@include('html/components/popup.html')
+    @@include('html/components/popupTime.html')
+  </body>
 
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./js/app.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/app.min.js"></script>
 </html>

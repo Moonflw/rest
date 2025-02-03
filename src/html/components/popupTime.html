@@ -1,0 +1,78 @@
+<div class="popup-time">
+  <div class="popup-time__wrapper">
+    <div class="popup-time__left">
+      <div class="popup-time__img-wrapper">
+        <img class="popup-time__img" src="@img/popup/popup-time.png" alt="" />
+      </div>
+    </div>
+    <div class="popup-time__right">
+      <div class="popup-time__from">
+        <div class="popup-time__form-wrapper">
+          <h2 class="popup-time__form-title">Get expert consultation</h2>
+          <p class="popup-time__form-text popup-time__form-text-desc">
+            Connect with our specialists for exclusive insights on luxurious
+            layouts, pricing, and availability.
+          </p>
+          <p class="popup-time__form-text popup-time__form-text-mob">
+            Connect with our specialists for exclusive insights on project
+            details.
+          </p>
+
+          <form class="popup-time__form-from" action="#">
+            <div class="popup-time__form-input__wrapper">
+              <input
+                class="popup-time__form-input"
+                placeholder="Your name"
+                type="text"
+              />
+            </div>
+            <div class="popup-time__form-input__wrapper">
+              <input
+                class="popup-time__form-input"
+                placeholder="Your e-mail"
+                type="mail"
+              />
+            </div>
+            <div class="popup-time__form-input__wrapper">
+              <input
+                class="popup-time__form-input"
+                placeholder="Phone number"
+                type="number"
+              />
+            </div>
+            <div class="popup-time__form-btns__wrapper">
+              <div class="popup-time__social popup-time__social-tg">
+                @@include('./UI/tg.html',{'socialMode':'social-dark','socialSize':'social-big'})
+              </div>
+              <div class="popup-time__social popup-time__social-wp">
+                @@include('./UI/wp.html',{'socialMode':'social-dark','socialSize':'social-big'})
+              </div>
+              <a href="#" class="popup-time__social popup-time__social-btn">
+                @@include('./UI/btn.html',{'btnText':'Request','btnMode':'dark','btnClass':'popup-time-social-btn'})
+              </a>
+            </div>
+          </form>
+          <p class="popup-time__form-info">Call us now to get expert assistance!</p>
+          <a href="#" class="popup-time__form-contact">+971 56 XXX-XX-XX</a>
+        </div>
+      </div>
+      <div class="popup-time__close">
+        <svg
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24.375 1.625L1.625 24.375M1.625 1.625L24.375 24.375"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
