@@ -157,6 +157,14 @@
         transform: translateY(0);
       }
     }
+
+    &-four{
+      & .about__card-wrapper {
+        @media (max-width: 479px) {
+          padding: 26px 20px !important;
+        }
+      }
+    }
   }
 
   // .about__card-bg
