@@ -30,7 +30,7 @@ import form from "./components/form.js";
 
 window.addEventListener("load", () => {
   plugins();
-  lenis();
+  // lenis();
   // Swiper.use([Navigation, Autoplay])
 
   validationPhoneInput();
