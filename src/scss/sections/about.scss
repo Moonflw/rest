@@ -145,6 +145,11 @@
       @media (max-width: 768px) {
         transform: translateY(0);
       }
+      & .about__card-wrapper {
+        @media (max-width: 479px) {
+          padding: 26px 26px !important;
+        }
+      }
     }
     &-three {
       transform: translateY(8rem);
