@@ -2,7 +2,7 @@ export function popups() {
   let popupTimer;
   let popupOpened = false;
 
-  function openPopupAfterDelay(popupId, delay = 500000) {
+  function openPopupAfterDelay(popupId, delay = 5000) {
     if (popupOpened) return;
 
     clearTimeout(popupTimer);
