@@ -6,7 +6,7 @@
   height: 4rem;
   top: 3rem;
   transition: transform 0.3s ease;
-  &.hidden{
+  &.hidden {
     transform: translateY(-300%);
   }
   @media (max-width: 768px) {
@@ -101,7 +101,7 @@
       transition: transform 0.5s ease;
       z-index: 2;
       position: relative;
-      
+
       .open-menu & {
         transition-delay: 0.2s;
         transform: translateX(0);
@@ -242,5 +242,30 @@
   // .header__social-btn
 
   &__social-btn {
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-hover {
+    position: relative;
+    &-text {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    &-text::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: #000;
+      transition: width 0.3s ease;
+    }
+    &:hover {
+      .menu-hover-text::after {
+        width: 100%;
+      }
+    }
   }
 }
