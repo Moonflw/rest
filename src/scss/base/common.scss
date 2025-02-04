@@ -46,6 +46,10 @@ body {
   background-color: var(--light-color);
   overflow-x: hidden;
   width: 100vw;
+  &.no-scroll {
+    overflow: hidden;
+    touch-action: none;
+  }
 }
 
 ._container {

@@ -15,6 +15,7 @@ import { popups } from "./components/popups.js";
 
 
 import { validationPhoneInput } from "./components/validation-phone-input.js";
+import form from "./components/form.js";
 
 
 
@@ -40,6 +41,7 @@ window.addEventListener("load", () => {
   developer();
   location();
   popups()
+  form()
   // Zoom Site Disabled
   document.addEventListener("gesturestart", function (e) {
     e.preventDefault();
