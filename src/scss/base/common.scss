@@ -8,7 +8,14 @@ html,
 body {
   scroll-behavior: smooth;
   font-size: rem(1920);
-
+  background: linear-gradient(
+    82deg,
+    #e9edf5 0%,
+    #fff 38.5%,
+    #fff 50%,
+    #fff 60%,
+    #fbf2e4 100%
+  );
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -58,5 +65,85 @@ body {
   width: 100%;
   @media (max-width: 768px) {
     padding: 0 30px;
+  }
+}
+
+/* Убираем иконку очистки в Chrome, Edge, Safari */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* Убираем стрелки у input[type="number"] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Для Firefox */
+}
+
+/* Убираем стрелку у select в Safari и Chrome */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Убираем стрелку у select в iOS Safari */
+select::-ms-expand {
+  display: none;
+}
+
+/* Убираем иконку человечка в Safari */
+input[type="email"],
+input[type="password"] {
+  -webkit-appearance: none;
+  background-image: none;
+}
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+}
+input {
+  // font-family: var(--fontJost);
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 1);
+  // padding: 1.3rem 3.2rem;
+  // border-radius: 2.4rem;
+  width: 100%;
+  height: 100%;
+  // margin-bottom: 1.4rem;
+  // background: rgba(255, 255, 255, 0.7);
+  // border: 1px solid #898989;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 11px 16px;
+    // border-radius: 24px;
+    // margin-bottom: 10px;
+  }
+  @media (max-width: 479px) {
+    font-size: 14px;
+    // border-radius: 16px;
+  }
+
+  &::placeholder {
+    font-family: var(--fontJost);
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.35);
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 479px) {
+      font-size: 14px;
+    }
   }
 }

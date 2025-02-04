@@ -26,7 +26,7 @@
     align-items: center;
     position: relative;
     // backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.5);
+    // background: rgba(0, 0, 0, 0.5);
     padding: 1em 1.2rem;
     border-radius: 3.5rem;
     overflow: hidden;
@@ -36,6 +36,10 @@
     @media (max-width: 768px) {
       padding: 6px 12px;
       border-radius: 35px;
+    }
+    transition: background 0.3s ease 0s;
+    .header-dark &{
+      background: rgba(0, 0, 0, 0.5);
     }
   }
 
@@ -63,17 +67,25 @@
       color: #000;
       border-radius: 20px;
       background-color: #fff;
-      padding: 0 2.4rem;
       position: relative;
-      // border: 2px solid #fff;
       z-index: 3;
       transition: all 0.3s ease 0s;
       height: 100%;
-      // .header-dark & {
-      //   color: #fff;
-      //   background-color: #000;
-      //   // border: 2px solid #000;
-      // }
+      cursor: pointer;
+      z-index: 100;
+      // overflow: hidden;
+
+      &-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 0 2.4rem;
+        pointer-events: none;
+      }
+
       &::after {
         content: url("../../img/header/line.svg");
         position: absolute;
@@ -90,6 +102,27 @@
           transition: all 0.9s ease;
           transform: translate(0, -50%);
           opacity: 1;
+        }
+      }
+
+      &-open {
+        transition: all 0.3s ease;
+        will-change: transform;
+        pointer-events: none;
+        .open-menu & {
+          transform: translateX(200%);
+        }
+      }
+      &-close {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-250%, -50%);
+        transition: all 0.3s ease;
+        will-change: transform;
+        pointer-events: none;
+        .open-menu & {
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -170,9 +203,10 @@
       height: 21px;
       width: 70px;
     }
-    svg {
+    img {
       width: 100%;
       height: 100%;
+      object-fit: contain;
     }
 
     &-white {
@@ -205,6 +239,10 @@
   // .header__social
 
   &__social {
+    svg {
+      -webkit-backface-visibility: hidden;
+      transform: translate3d(0, 0, 0);
+    }
     @media (max-width: 768px) {
       width: 24px;
       height: 24px;

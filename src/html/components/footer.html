@@ -1,49 +1,78 @@
 <footer class="footer">
-  <div class="_container">
-    <h2 class="footer__title">Get expert consultation</h2>
-    <ul class="footer__list-anchor">
-      <li><a data-scroll="intro-scroll" class="footer__list-anchor-item menu-hover"><p class="menu-hover-text">Home</p> </a></li>
-      <li><a data-scroll="about-scroll" class="footer__list-anchor-item menu-hover"><p class="menu-hover-text">About</p> </a></li>
-      <li><a data-scroll="invest-scroll" class="footer__list-anchor-item menu-hover"><p class="menu-hover-text">Investments</p> </a></li>
-      <li><a data-scroll="developer-scroll" class="footer__list-anchor-item menu-hover"><p class="menu-hover-text">Location</p> </a></li>
-    </ul>
-    <div class="footer__list-contact">
-      <a href="" class="footer__list-contact-item">
-        <img
-          class="footer__list-contact-item-img"
-          src="../../img/social/tg-dark.svg"
-          alt=""
-        />
-        <div>
-          <div class="footer__list-contact-item-title">TELEGRAM</div>
-          <span class="footer__list-contact-item-subtitle">Write us</span>
-        </div>
-      </a>
-      <a href="" class="footer__list-contact-item">
-        <img
-          class="footer__list-contact-item-img"
-          src="../../img/social/wp-dark.svg"
-          alt=""
-        />
-        <div>
-          <div class="footer__list-contact-item-title">WHATSAPP</div>
-          <span class="footer__list-contact-item-subtitle">Contact us</span>
-        </div>
-      </a>
-      <a href="" class="footer__list-contact-item">
-        <img
-          class="footer__list-contact-item-img"
-          src="../../img/social/call-dark.svg"
-          alt=""
-        />
-        <div>
-          <div class="footer__list-contact-item-title">+971 52 192 5615</div>
-          <span class="footer__list-contact-item-subtitle">Call us</span>
-        </div>
-      </a>
-    </div>
-    <div class="footer__btn-mob">
+  <div class="footer__wrapper">
+    <div class="_container">
+      <h2 class="footer__title">Get expert consultation</h2>
+      <ul class="footer__list-anchor">
+        <li>
+          <a
+            data-scroll="intro-scroll"
+            class="footer__list-anchor-item menu-hover"
+            ><p class="menu-hover-text">Home</p>
+          </a>
+        </li>
+        <li>
+          <a
+            data-scroll="about-scroll"
+            class="footer__list-anchor-item menu-hover"
+            ><p class="menu-hover-text">About</p>
+          </a>
+        </li>
+        <li>
+          <a
+            data-scroll="invest-scroll"
+            class="footer__list-anchor-item menu-hover"
+            ><p class="menu-hover-text">Investments</p>
+          </a>
+        </li>
+        <li>
+          <a
+            data-scroll="developer-scroll"
+            class="footer__list-anchor-item menu-hover"
+            ><p class="menu-hover-text">Location</p>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__list-contact">
+        <a href="" class="footer__list-contact-item">
+          <img
+            class="footer__list-contact-item-img"
+            src="../../img/social/tg-dark.svg"
+            alt=""
+          />
+          <div>
+            <div class="footer__list-contact-item-title">TELEGRAM</div>
+            <span class="footer__list-contact-item-subtitle">Write us</span>
+          </div>
+        </a>
+        <a href="" class="footer__list-contact-item">
+          <img
+            class="footer__list-contact-item-img"
+            src="../../img/social/wp-dark.svg"
+            alt=""
+          />
+          <div>
+            <div class="footer__list-contact-item-title">WHATSAPP</div>
+            <span class="footer__list-contact-item-subtitle">Contact us</span>
+          </div>
+        </a>
+        <a href="" class="footer__list-contact-item">
+          <img
+            class="footer__list-contact-item-img"
+            src="../../img/social/call-dark.svg"
+            alt=""
+          />
+          <div>
+            <div class="footer__list-contact-item-title">+971 52 192 5615</div>
+            <span class="footer__list-contact-item-subtitle">Call us</span>
+          </div>
+        </a>
+      </div>
+      <div class="footer__btn-mob">
         @@include('../components/UI/btn.html',{'btnText':'Contact Us','btnMode':'dark','btnClass':'footer-btn','dataPopupType':'data-popup','popupType':'time-popup'})
+      </div>
     </div>
+  </div>
+  <div class="footer__bg _container">
+    <img src="@img/footer/footer-bg.png" alt="" />
   </div>
 </footer>

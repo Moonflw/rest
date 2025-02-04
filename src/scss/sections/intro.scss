@@ -66,6 +66,7 @@
     margin-bottom: 7px;
     @media (max-width: 768px) {
       margin-bottom: 21px;
+      text-align: center;
     }
   }
 
@@ -90,7 +91,7 @@
 
   &__subtitle {
     // margin-bottom: 4rem;
-    max-width: 75rem;
+    max-width: 70rem;
     @media (max-width: 768px) {
       max-width: 300px;
       // margin-bottom: 21px;
@@ -102,7 +103,7 @@
   &__subtitle-text {
     font-family: var(--fontRel);
     font-weight: 300;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 100%;
     color: rgba(255, 255, 255, 0.85);
     width: 100%;
@@ -335,7 +336,7 @@
     font-size: 2rem;
     color: rgba(0, 0, 0, 1);
     padding: 1.3rem 3.2rem;
-    border-radius: 2.4rem;
+    border-radius: 24px;
     width: 100%;
     height: 100%;
     margin-bottom: 1.4rem;
@@ -368,7 +369,7 @@
     &:focus,
     &:active {
       background: rgba(255, 255, 255, 0.7);
-      border: 1px solid #898989;
+      border: 1px solid #1F1F1F;
     }
   }
 
