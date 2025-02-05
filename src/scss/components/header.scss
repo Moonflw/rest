@@ -38,7 +38,7 @@
       border-radius: 35px;
     }
     transition: background 0.3s ease 0s;
-    .header-dark &{
+    .header-dark & {
       background: rgba(0, 0, 0, 0.5);
     }
   }
@@ -97,7 +97,7 @@
         width: 10px;
         opacity: 0;
         transition: all 0.3s ease;
-        @media (max-width: 1500px){
+        @media (max-width: 1500px) {
           transform: translate(-100%, -44%);
         }
         .open-menu & {
@@ -105,7 +105,7 @@
           transition: all 0.9s ease;
           transform: translate(0, -50%);
           opacity: 1;
-          @media (max-width: 1500px){
+          @media (max-width: 1500px) {
             transform: translate(0, -44%);
           }
         }
@@ -263,8 +263,8 @@
       display: none;
       @media (max-width: 768px) {
         display: block;
-        width: 17px;
-        height: 17px;
+        width: 24px;
+        height: 24px;
       }
     }
   }

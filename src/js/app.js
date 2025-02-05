@@ -1,4 +1,5 @@
 // import Swiper from "swiper";
+import { preloader } from "./components/preloader.js";
 import { plugins } from "./components/plugins.js";
 import { lenis } from "./components/lenis.js";
 import { header } from "./components/header.js";
@@ -22,8 +23,9 @@ window.addEventListener("unload", function () {
   gsap.to(window, { duration: 0, scrollTo: 0 });
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   plugins();
+  preloader();
   // lenis();
   // Swiper.use([Navigation, Autoplay])
 

@@ -32,6 +32,9 @@
     @media (max-width: 768px) {
       font-size: 22px;
     }
+    @media (max-width: 479px) {
+      font-size: 15px;
+    }
   }
 
   // .about__title
@@ -56,7 +59,7 @@
       font-size: 34px;
     }
     @media (max-width: 570px) {
-      font-size: 16px;
+      font-size: 28px;
     }
   }
 
@@ -87,6 +90,9 @@
       max-width: 100%;
       width: 100%;
       font-size: 22px;
+    }
+    @media (max-width: 479px) {
+      font-size: 16px;
     }
   }
 
@@ -158,7 +164,7 @@
       }
     }
 
-    &-four{
+    &-four {
       & .about__card-wrapper {
         @media (max-width: 479px) {
           padding: 26px 20px !important;
