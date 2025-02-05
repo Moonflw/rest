@@ -6,7 +6,9 @@
 }
 html,
 body {
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
+  height: auto;
+  position: relative;
   font-size: rem(1920);
   background: linear-gradient(
     82deg,
@@ -23,31 +25,31 @@ body {
 
 //* для lenis
 
-html.lenis,
-html.lenis body {
-  height: auto;
-}
+// html.lenis,
+// html.lenis body {
+//   height: auto;
+// }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
+// .lenis.lenis-smooth {
+//   scroll-behavior: auto !important;
+// }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-  overflow-y: scroll;
-}
-.lenis [data-lenis-prevent] {
-  overscroll-behavior: contain;
-  overflow-y: scroll;
-}
+// .lenis.lenis-smooth [data-lenis-prevent] {
+//   overscroll-behavior: contain;
+//   overflow-y: scroll;
+// }
+// .lenis [data-lenis-prevent] {
+//   overscroll-behavior: contain;
+//   overflow-y: scroll;
+// }
 
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
+// .lenis.lenis-stopped {
+//   overflow: hidden;
+// }
 
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
+// .lenis.lenis-scrolling iframe {
+//   pointer-events: none;
+// }
 
 body {
   background-color: var(--light-color);

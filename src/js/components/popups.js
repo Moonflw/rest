@@ -13,7 +13,7 @@ export function popups() {
         if (popup) {
           popup.classList.add("open");
           document.body.classList.add("no-scroll");
-          lenisScroll.stop();
+          // lenisScroll.stop();
           popupOpened = true;
         }
       }
@@ -28,7 +28,7 @@ export function popups() {
       if (popup) {
         popup.classList.add("open");
         document.body.classList.add("no-scroll");
-        lenisScroll.stop();
+        // lenisScroll.stop();
         popupOpened = true;
         clearTimeout(popupTimer);
       }
@@ -42,7 +42,7 @@ export function popups() {
       document.querySelectorAll(".popup-all.open").forEach((popup) => {
         popup.classList.remove("open");
         document.body.classList.remove("no-scroll");
-        lenisScroll.start();
+        // lenisScroll.start();
       });
 
       if (!popupOpened) {
