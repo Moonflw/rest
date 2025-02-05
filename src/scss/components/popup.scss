@@ -222,6 +222,7 @@
     border: 1px solid #898989;
     &__wrapper {
       font-size: 2rem;
+      font-variant-numeric: lining-nums proportional-nums;
       @media (max-width: 768px) {
         font-size: 14px;
       }
