@@ -97,11 +97,17 @@
         width: 10px;
         opacity: 0;
         transition: all 0.3s ease;
+        @media (max-width: 1500px){
+          transform: translate(-100%, -44%);
+        }
         .open-menu & {
           transition-delay: 0.3s;
           transition: all 0.9s ease;
           transform: translate(0, -50%);
           opacity: 1;
+          @media (max-width: 1500px){
+            transform: translate(0, -44%);
+          }
         }
       }
 
