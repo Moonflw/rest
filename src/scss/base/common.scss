@@ -162,10 +162,31 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:active,
 select:-webkit-autofill:focus {
-    color: #000 !important;
-    -webkit-text-fill-color: #000 !important;
-    // -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset !important;
-    // -webkit-background-clip: text !important;
-    // background-clip: text !important;
-    background: rgba(255, 255, 255, 0.7) !important; 
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+  // -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset !important;
+  // -webkit-background-clip: text !important;
+  // background-clip: text !important;
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+div .phoneintl {
+  @media (max-width: 3000px) {
+    padding-left: 130px !important;
+  }
+  @media (max-width: 1920px) {
+    padding-left: 110px !important;
+  }
+  @media (max-width: 1470px) {
+    padding-left: 100px !important;
+  }
+  @media (max-width: 1336px) {
+    padding-left: 90px !important;
+  }
+  @media (max-width: 768px) {
+    padding-left: 110px !important;
+  }
+  @media (max-width: 479px) {
+    padding-left: 90px !important;
+  }
 }

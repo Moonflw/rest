@@ -9,15 +9,9 @@ import { developer } from "./sections/developer.js";
 import { location } from "./sections/location.js";
 import { popups } from "./components/popups.js";
 
-
-
-
-
-
 import { validationPhoneInput } from "./components/validation-phone-input.js";
 import form from "./components/form.js";
-
-
+import { queryMatches } from "./components/utils.js";
 
 window.addEventListener("onbeforeunload", function () {
   window.scrollTo(0, 0);
@@ -34,14 +28,35 @@ window.addEventListener("load", () => {
   // Swiper.use([Navigation, Autoplay])
 
   validationPhoneInput();
-  header()
+  header();
   intro();
   about();
   invest();
   developer();
   location();
-  popups()
-  form()
+  popups();
+  form();
+
+  // hide wp
+
+  if (queryMatches(498)) {
+    const tlWp = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "top bottom",
+        end: "top bottom",
+        onEnter: () => {
+          document.querySelector(".gl-ax-wp-logo").style.cssText =
+            "display:none";
+        },
+        onEnterBack: () => {
+          document.querySelector(".gl-ax-wp-logo").style.cssText =
+            "display:block";
+        },
+      },
+    });
+  }
+
   // Zoom Site Disabled
   document.addEventListener("gesturestart", function (e) {
     e.preventDefault();
