@@ -220,6 +220,19 @@
     margin-bottom: 1.4rem;
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid #898989;
+    &__wrapper{
+      font-size: 2rem;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (max-width: 479px) {
+        font-size: 14px;
+      }
+      & .iti__selected-flag {
+        border-top-left-radius: 3.4rem;
+        border-bottom-left-radius: 3.4rem;
+      }
+    }
 
     @media (max-width: 768px) {
       font-size: 14px;
@@ -261,7 +274,7 @@
     justify-content: center;
     margin-top: 1.8rem;
     @media (max-width: 768px) {
-      margin-top: 8px;
+      margin-top: 18px;
       gap: 16px;
     }
   }

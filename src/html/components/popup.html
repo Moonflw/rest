@@ -18,12 +18,14 @@
             availabilities
           </p>
 
-          <form class="popup__form-from" action="#">
+          <form data-gtag-submit="" class="popup__form-from" action="#">
             <div class="popup__form-input__wrapper">
               <input
                 class="popup__form-input"
                 placeholder="Your name"
                 type="text"
+                name="name"
+                required
               />
             </div>
             <div class="popup__form-input__wrapper">
@@ -31,13 +33,17 @@
                 class="popup__form-input"
                 placeholder="Your e-mail"
                 type="mail"
+                name="email"
+                required
               />
             </div>
             <div class="popup__form-input__wrapper">
               <input
                 class="popup__form-input"
                 placeholder="Phone number"
-                type="number"
+                type="tel"
+                name="phone"
+                required
               />
             </div>
             <div class="popup__form-btns__wrapper">
@@ -53,7 +59,9 @@
             </div>
           </form>
           <p class="popup__form-info">Call us now to get expert assistance!</p>
-          <a href="#" class="popup__form-contact">+971 56 XXX-XX-XX</a>
+          <a class="phone-replace-only popup__form-contact">
+            <span>+971 XX XXX-XX-XX</span>
+          </a>
         </div>
       </div>
       <div class="popup__close close-popup">

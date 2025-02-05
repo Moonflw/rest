@@ -18,12 +18,14 @@
             details.
           </p>
 
-          <form class="popup-time__form-from" action="#">
+          <form data-gtag-submit="" class="popup-time__form-from" action="#">
             <div class="popup-time__form-input__wrapper">
               <input
                 class="popup-time__form-input"
                 placeholder="Your name"
                 type="text"
+                name="name"
+                required
               />
             </div>
             <div class="popup-time__form-input__wrapper">
@@ -31,13 +33,18 @@
                 class="popup-time__form-input"
                 placeholder="Your e-mail"
                 type="mail"
+                type="mail"
+                name="email"
+                required
               />
             </div>
             <div class="popup-time__form-input__wrapper">
               <input
                 class="popup-time__form-input"
                 placeholder="Phone number"
-                type="number"
+                type="tel"
+                name="phone"
+                required
               />
             </div>
             <div class="popup-time__form-btns__wrapper">
@@ -55,7 +62,9 @@
           <p class="popup-time__form-info">
             Call us now to get expert assistance!
           </p>
-          <a href="#" class="popup-time__form-contact">+971 56 XXX-XX-XX</a>
+          <a class="phone-replace-only popup-time__form-contact">
+            <span>+971 XX XXX-XX-XX</span>
+          </a>
         </div>
       </div>
       <div class="popup-time__close close-popup">

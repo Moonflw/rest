@@ -149,6 +149,25 @@
         gap: 10px;
       }
       &-input-wrap {
+        font-size: 2rem;
+        & .iti__selected-flag {
+          border-top-left-radius: 3.4rem;
+          border-bottom-left-radius: 3.4rem;
+        }
+        @media (max-width: 1200px) {
+          .phoneintl {
+            padding-left: 77px !important;
+          }
+        }
+        @media (max-width: 768px) {
+          font-size: 20px;
+          .phoneintl {
+            padding-left: 99px !important;
+          }
+        }
+        @media (max-width: 479px) {
+          font-size: 14px;
+        }
       }
 
       &-input {
