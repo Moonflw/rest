@@ -61,7 +61,11 @@
           availabilities
         </p>
 
-        <form  class="intro__form-from form"  onsubmit="ym(99226010,'reachGoal','form')" data-gtag-submit="modal">
+        <form
+          class="intro__form-from form"
+          onsubmit="ym(99226010,'reachGoal','form')"
+          data-gtag-submit="modal"
+        >
           <div class="intro__form-input__wrapper">
             <input
               class="intro__form-input"
@@ -69,7 +73,6 @@
               type="text"
               name="name"
               required
-
             />
           </div>
           <div class="intro__form-input__wrapper">
@@ -81,15 +84,31 @@
               required
             />
           </div>
-          <div class="intro__form-input__wrapper">
-            <input
-              class="intro__form-input"
-              placeholder="Phone number"
-              type="tel"
-              name="phone"
-              required
-            />
+          <div class="intro__form-input__wrapper-wrap">
+            <div
+              class="intro__form-input__wrapper intro__form-input__wrapper-origin"
+            >
+              <input
+                class="intro__form-input"
+                placeholder="Phone number"
+                type="tel"
+                name="phone"
+                required
+              />
+            </div>
+            <div
+              class="intro__form-input__wrapper intro__form-input__wrapper-fake"
+            >
+              <input
+                class="intro__form-input"
+                placeholder="Phone number"
+                type="tel"
+                name="phone"
+                required
+              />
+            </div>
           </div>
+
           <div class="intro__form-btn__wrapper">
             @@include('../components/UI/btn.html',{'btnText':'Enquire','btnMode':'dark','btnClass':'intro-btn'})
           </div>

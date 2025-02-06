@@ -384,6 +384,29 @@
         border-top-left-radius: 3.4rem;
         border-bottom-left-radius: 3.4rem;
       }
+      &-wrap {
+        position: relative;
+      }
+      &-origin {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        .loaded-intro-input & {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &-fake {
+        position: relative;
+        z-index: 2;
+        .loaded-intro-input & {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
     }
 
     &::placeholder {
