@@ -48,11 +48,11 @@ window.addEventListener("DOMContentLoaded", () => {
         start: "top bottom",
         end: "top bottom",
         onEnter: () => {
-          document.querySelector(".gl-ax-wp-logo").style.cssText =
+          document.querySelector(".fixed-whatsapp").style.cssText =
             "display:none";
         },
         onEnterBack: () => {
-          document.querySelector(".gl-ax-wp-logo").style.cssText =
+          document.querySelector(".fixed-whatsapp").style.cssText =
             "display:block";
         },
       },
