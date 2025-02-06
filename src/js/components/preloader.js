@@ -4,14 +4,14 @@ export function preloader() {
 
   gsap.to(preloader, {
     clipPath: "inset(0 0% 0 0)",
-    duration: 2,
+    duration: 1.5,
     ease: "none",
     onComplete: () => {
       document.body.classList.remove("no-scroll");
       document.body.classList.add("loaded");
       setTimeout(() => {
         introPhoneOrigin.classList.add("loaded-intro-input")
-      }, 4000);
+      }, 3000);
     },
   });
 }
