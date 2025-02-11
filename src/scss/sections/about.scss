@@ -257,6 +257,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
     @media (max-width: 768px) {
       gap: 50px;
     }
@@ -270,6 +271,27 @@
       width: 100%;
       // gap:inherit;
     }
+
+    &-wrapper {
+      // display: flex;
+      width: 100%;
+    }
+    &__first {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      @media (max-width: 768px) {
+        margin-top: 20px;
+        justify-content: center;
+      }
+      .about__card-item {
+        width: 20rem;
+        @media (max-width: 768px) {
+          width: 200px;
+        }
+      }
+    }
+
     &-two {
       gap: 2rem;
       @media (max-width: 768px) {
@@ -285,14 +307,15 @@
     &-four {
       flex-wrap: nowrap;
       gap: 5.5rem;
+      display: block;
       @media (max-width: 768px) {
         gap: 55px;
       }
       & .about__card-items__wrapper-four {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 2rem;
         @media (max-width: 768px) {
           gap: 20px;
@@ -304,20 +327,20 @@
     }
   }
 
-  .about__card-items__left,
-  .about__crad-items-right {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    @media (max-width: 768px) {
-      gap: 20px;
-    }
-    @media (max-width: 570px) {
-      gap: 17px;
-    }
-  }
+  // .about__card-items__left,
+  // .about__crad-items-right {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 2rem;
+  //   align-items: center;
+  //   justify-content: center;
+  //   @media (max-width: 768px) {
+  //     gap: 20px;
+  //   }
+  //   @media (max-width: 570px) {
+  //     gap: 17px;
+  //   }
+  // }
 
   // .about__card-item
 
@@ -411,6 +434,12 @@
     }
 
     &-four {
+      width: 21rem;
+      margin-top: 2rem;
+      @media (max-width: 768px) {
+        width: 200px;
+        margin-top: 20px;
+      }
       & .about__card-item__text-wrapper {
         display: flex;
         flex-direction: column;
