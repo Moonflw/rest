@@ -1,64 +1,30 @@
 <!doctype html>
-<html lang="en" dir="ltr">
-  @@include('html/components/head.html',{ "title":"Orise Tower" })
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
 
-  <body class="no-scroll">
+<html lang="en" dir="ltr">
+  @@include('html/components/head.html',{ "title":"Obi Hayot" })
+
+  <body >
     @@include('html/components/header.html')
     @@include('html/components/preloader.html')
     <main class="main">
-      @@include('html/sections/intro.html')
-      @@include('html/sections/about.html')
-      @@include('html/sections/invest.html')
-      @@include('html/sections/developer.html')
     </main>
+    @@include('html/sections/intro.html')
+    @@include('html/sections/menu.html')
+    @@include('html/sections/gallery.html')
+    @@include('html/sections/map.html')
 
     @@include('html/components/footer.html')
-    @@include('html/components/popup.html')
-    @@include('html/components/popupTime.html')
+   
 
-    <a
-      target="_blank"
-      class="event_wp fixed-whatsapp"
-      data-gtag-click="whatsapp"
-      onclick="ym(11111111,'reachGoal','whatsapp icon')"
-    >
-      <svg
-        width="135"
-        height="135"
-        viewBox="0 0 135 135"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M67.5 135C104.779 135 135 104.779 135 67.5C135 30.2208 104.779 0 67.5 0C30.2208 0 0 30.2208 0 67.5C0 104.779 30.2208 135 67.5 135Z"
-          fill="url(#paint0_linear_2059_3732)"
-        ></path>
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M99.9835 35.86C91.9035 27.77 81.1434 23.31 69.6934 23.31C46.0934 23.31 26.8835 42.51 26.8735 66.11C26.8735 73.65 28.8434 81.02 32.5934 87.51L26.5234 109.69L49.2234 103.74C55.4734 107.15 62.5235 108.95 69.6835 108.95H69.7034C93.3034 108.95 112.513 89.75 112.523 66.14C112.513 54.7 108.063 43.95 99.9835 35.86ZM69.6835 101.72H69.6735C63.2835 101.72 57.0234 100 51.5634 96.76L50.2634 95.99L36.7935 99.52L40.3934 86.39L39.5435 85.04C35.9835 79.38 34.1035 72.83 34.1035 66.11C34.1135 46.49 50.0734 30.53 69.7134 30.53C79.2234 30.53 88.1535 34.24 94.8735 40.96C101.593 47.69 105.293 56.62 105.283 66.13C105.273 85.76 89.3035 101.72 69.6835 101.72ZM89.2134 75.07C88.1434 74.53 82.8834 71.95 81.9034 71.59C80.9234 71.23 80.2135 71.05 79.4935 72.13C78.7835 73.2 76.7335 75.61 76.1035 76.32C75.4835 77.03 74.8534 77.12 73.7834 76.59C72.7134 76.05 69.2635 74.93 65.1835 71.28C62.0035 68.44 59.8535 64.94 59.2335 63.87C58.6135 62.8 59.1634 62.22 59.7034 61.69C60.1834 61.21 60.7735 60.44 61.3035 59.82C61.8335 59.2 62.0135 58.75 62.3735 58.04C62.7335 57.33 62.5534 56.7 62.2834 56.17C62.0134 55.63 59.8735 50.37 58.9835 48.23C58.1135 46.14 57.2334 46.43 56.5734 46.39C55.9534 46.36 55.2334 46.35 54.5234 46.35C53.8134 46.35 52.6535 46.62 51.6735 47.69C50.6935 48.76 47.9335 51.35 47.9335 56.61C47.9335 61.87 51.7635 66.96 52.3035 67.67C52.8435 68.38 59.8434 79.19 70.5834 83.82C73.1334 84.92 75.1335 85.58 76.6835 86.07C79.2435 86.88 81.5835 86.77 83.4235 86.49C85.4835 86.18 89.7534 83.9 90.6434 81.4C91.5334 78.9 91.5334 76.76 91.2634 76.31C90.9934 75.87 90.2834 75.61 89.2134 75.07Z"
-          fill="white"
-        ></path>
-        <defs>
-          <linearGradient
-            id="paint0_linear_2059_3732"
-            x1="67.505"
-            y1="125.188"
-            x2="67.505"
-            y2="-9.8118"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#78CD51"></stop>
-            <stop offset="1" stop-color="#A0FC84"></stop>
-          </linearGradient>
-        </defs>
-      </svg>
-    </a>
+    
   </body>
-  <script
-    type="module"
-    src="https://fnst.axflare.com/landings/global-script/landings-global-script.js"
-  ></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+  Fancybox.bind("[data-fancybox='gal']", {
+  });
+</script>
   <script src="./js/app.min.js"></script>
 </html>

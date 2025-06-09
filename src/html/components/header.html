@@ -1,56 +1,74 @@
 <header class="header">
-  <div class="header__wrapper _container">
-    <div class="header__content">
-      <div class="header__left">
-        <div class="header__menu">
-          <button class="header__menu-btn">
-            <div class="header__menu-btn-wrapper">
-              <p class="header__menu-btn-close">Close</p>
-              <p class="header__menu-btn-open">Menu</p>
-            </div>
-          </button>
-          <div class="header__menu-navs-wrapper">
-            <div class="header__menu-navs">
-              <a data-scroll="intro-scroll" class="header__menu-nav menu-hover"
-                ><p class="menu-hover-text">Home</p></a
-              >
-              <a data-scroll="about-scroll" class="header__menu-nav menu-hover"
-                ><p class="menu-hover-text">About</p></a
-              >
-              <a data-scroll="invest-scroll" class="header__menu-nav menu-hover"
-                ><p class="menu-hover-text">Investments</p>
-              </a>
-              <a
-                data-scroll="developer-scroll"
-                class="header__menu-nav menu-hover"
-                ><p class="menu-hover-text">Location</p>
-              </a>
-            </div>
-          </div>
+  <nav class="_container" >
+    <div class="nav">
+      <a href="#" class="header__logo">
+        Obi Hayot
+      </a>
+      <ul class="header__list">
+        <div class="header__list-right">
+          
+        <li class="header__list-item">
+          <a href="#">
+            Наша история
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">
+            Меню
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">
+            Галерея
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">
+            Локация
+          </a>
+        </li>
         </div>
+        <div class="header__list-left">
+          <a href="tel:+998973508888">Позвонить нам<br>+998 97 350 88 88</a>
+        </div>
+      </ul>
+      <div class="header__mob-btn">
+          <span></span>
+          <span></span>
+          <span></span>
       </div>
-      <div class="header__center">
-        <div class="header__logo">
-          <img src="@img/header/header-logo.svg" alt="" />
-        </div>
-      </div>
-      <div class="header__right">
-        <div class="header__social header__social-tg">
-          @@include('./UI/tg.html',{'socialMode':'social-white','socialSize':'social-big'})
-        </div>
-        <div class="header__social header__social-wp">
-          @@include('./UI/wp.html',{'socialMode':'social-white','socialSize':'social-big'})
-        </div>
-        <a
-          href="#"
-          class="header__social header__social-desc header__social-btn event_call"
-        >
-          @@include('./UI/btn.html',{'btnText':'Contact Us','btnMode':'white','btnClass':'header-social-btn'})
-        </a>
-        <div class="header__social header__social-mob">
-          @@include('./UI/call.html',{'socialMode':'social-white','socialSize':'social-big'})
+      <div class="header__mob">
+        
+        <ul class="header__mob-list">
+          <li class="header__mob-list-item">
+            <a class="header__mob-list-item-link" href="#">Наша история</a>
+          </li>
+          <li class="header__mob-list-item">
+            <a class="header__mob-list-item-link" href="#">Меню</a>
+          </li>
+          <li class="header__mob-list-item">
+            <a class="header__mob-list-item-link" href="#">Галерея</a>
+          </li>
+          <li class="header__mob-list-item">
+            <a class="header__mob-list-item-link" href="#">Локация</a>
+          </li>
+        </ul>
+
+        <div class="header__mob-socials">
+          <a href="#">
+            <img class="header__mob-socials-img" src="img/icons/facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img class="header__mob-socials-img" src="img/icons/instagram.png" alt="">
+          </a>
+          <a href="#">
+            <img class="header__mob-socials-img" src="img/icons/telegram.png" alt="">
+          </a>
+          <a href="#" style="background-color: black; border-radius: 12px;">
+            <img class="header__mob-socials-img" src="img/phone3.png" alt="">
+          </a>
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 </header>

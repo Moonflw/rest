@@ -1,99 +1,37 @@
 <footer class="footer">
-  <div class="footer__wrapper">
-    <div class="_container">
-      <h2 class="footer__title">Get expert consultation</h2>
-      <ul class="footer__list-anchor">
-        <li>
-          <div
-            data-scroll="intro-scroll"
-            class="footer__list-anchor-item menu-hover"
-          >
-            <p class="menu-hover-text">Home</p>
-          </div>
-        </li>
-        <li>
-          <div
-            data-scroll="about-scroll"
-            class="footer__list-anchor-item menu-hover"
-          >
-            <p class="menu-hover-text">About</p>
-          </div>
-        </li>
-        <li>
-          <div
-            data-scroll="invest-scroll"
-            class="footer__list-anchor-item menu-hover"
-          >
-            <p class="menu-hover-text">Investments</p>
-          </div>
-        </li>
-        <li>
-          <div
-            data-scroll="developer-scroll"
-            class="footer__list-anchor-item menu-hover"
-          >
-            <p class="menu-hover-text">Location</p>
-          </div>
-        </li>
-      </ul>
-      <div class="footer__list-contact">
-        <a
-          href=""
-          class="footer__list-contact-item event_tg"
-          data-gtag-click="telegram"
-          onclick="ym(99226010,'reachGoal','phone number')"
-        >
-          <img
-            class="footer__list-contact-item-img"
-            src="@img/social/tg-dark.svg"
-            alt=""
-          />
-          <div>
-            <div class="footer__list-contact-item-title">TELEGRAM</div>
-            <span class="footer__list-contact-item-subtitle">Write us</span>
-          </div>
-        </a>
-        <a
-          href=""
-          class="footer__list-contact-item event_wp"
-          data-gtag-click="phone_call"
-          onclick="ym(99226010,'reachGoal','phone number')"
-        >
-          <img
-            class="footer__list-contact-item-img"
-            src="@img/social/wp-dark.svg"
-            alt=""
-          />
-          <div>
-            <div class="footer__list-contact-item-title">WHATSAPP</div>
-            <span class="footer__list-contact-item-subtitle">Contact us</span>
-          </div>
-        </a>
-        <a
-          href=""
-          class="footer__list-contact-item event_call"
-          data-gtag-click="phone_call"
-          onclick="ym(99226010,'reachGoal','phone number')"
-        >
-          <img
-            class="footer__list-contact-item-img"
-            src="@img/social/call-dark.svg"
-            alt=""
-          />
-          <div>
-            <div class="phone-replace-only footer__list-contact-item-title">
-              <span>+971 XX XXX-XX-XX</span>
-            </div>
-            <span class="footer__list-contact-item-subtitle">Call us</span>
-          </div>
-        </a>
-      </div>
-      <div class="footer__btn-mob">
-        @@include('../components/UI/btn.html',{'btnText':'Contact Us','btnMode':'dark','btnClass':'footer-btn','dataPopupType':'data-popup','popupType':'time-popup'})
-      </div>
+    <div class="footer__left">
+        <p class="footer__desc"><span class="footer__title">Obi Haoyt</span> - Восточное гостеприимство</p><br>
+        <p class="footer__desc">Est - 2018.</p>
+        <div class="footer__link">
+
+            <a href="">
+                <img src="img/icons/facebook.png" alt="" class="contact__img phone">
+            </a>
+            <a href="">
+                <img src="img/icons/telegram.png" alt="" class="contact__img phone">
+            </a>
+            <a href="">
+                <img src="img/icons/instagram.png" alt="" class="contact__img phone">
+            </a>
+            <a >
+                <img src="img/phone3.png" alt="" class="contact__img phone">
+            </a>
+        </div>
     </div>
-  </div>
-  <div class="footer__bg _container">
-    <img src="@img/footer/footer-bg.png" alt="" />
-  </div>
+    <div class="footer__right">
+        <div class="location" id="">
+            <img src="img/location.png" alt="" class="target__img">
+            <div class="holder">
+                <h3 class="footer__title">Мы находимся</h3>
+                <p class="footer__desc">Ташкент, Ул. Джаркурганская, 4.</p>
+            </div>
+        </div>
+        <div class="hours">
+            <img src="img/time.png" alt="" class="target__img">
+            <div class="holder">
+                <h3 class="footer__title">Мы работаем</h3>
+                <p class="footer__desc">12:00 - 23:00 | Без выходных</p>
+            </div>
+        </div>
+    </div>
 </footer>

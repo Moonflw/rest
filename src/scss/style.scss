@@ -10,22 +10,12 @@
 // Components
 @import "./components/header";
 @import "./components/footer";
-@import "./components/popup";
-@import "./components/popupTime";
 @import "./components/preloader";
 
+@import './sections/intro';
+@import './sections/menu';
+@import './sections/gallery';
+@import './sections/map';
 
 
-
-// UI
-@import "./components/UI/btn";
-@import "./components/UI/social";
-
-
-// Home Page
-@import "./sections/intro";
-@import "./sections/about";
-@import "./sections/invest";
-@import "./sections/developer";
-@import "./sections/location";
 

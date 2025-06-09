@@ -1,17 +1,22 @@
 export function preloader() {
   const preloader = document.querySelector(".preloader__white");
-  const introPhoneOrigin = document.querySelector(".intro__form-input__wrapper-wrap")
+  const inner = document.querySelector(".intro");
+  const nav = document.querySelector(".header");
+  const btn = document.querySelector('.read-more-btn');
+  const text = document.querySelector('.text-block');
 
+  btn.addEventListener('click', () => {
+    text.classList.toggle('expanded');
+    btn.textContent = text.classList.contains('expanded') ? 'Скрыть' : 'Читать далее';
+  });
   gsap.to(preloader, {
     clipPath: "inset(0 0% 0 0)",
     duration: 1.5,
     ease: "none",
     onComplete: () => {
-      document.body.classList.remove("no-scroll");
       document.body.classList.add("loaded");
-      setTimeout(() => {
-        introPhoneOrigin.classList.add("loaded-intro-input")
-      }, 3000);
+      inner.classList.add('active')
+      nav.classList.add('active')
     },
   });
 }

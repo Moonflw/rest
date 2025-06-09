@@ -1,0 +1,27 @@
+.section-map {
+    padding: 90px 0;
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+
+.section-map__title {
+    margin-bottom: 44px;
+}
+
+@media (max-width: 959px) {
+    .section-map__title {
+        margin-bottom: 22px;
+    }
+
+    .section-map {
+        padding: 40px 0;
+    }
+
+}
+
+.map {
+    background: #626262;
+    height: 358px;
+}
+
