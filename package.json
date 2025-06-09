@@ -5,8 +5,8 @@
     "main": "gulpfile.js",
     "type": "module",
     "scripts": {
+        "build": "[my-framework] build --output public",
         "dev": "gulp",
-        "build": "gulp build --build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "islom",
