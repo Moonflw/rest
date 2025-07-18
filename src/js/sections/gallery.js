@@ -7,7 +7,6 @@ export function gallery() {
       trigger: gallery,
       start: 'top center',
       end: 'bottom bottom',
-      markers: true,
       once: true,
       onEnter: () => {
         gallery.classList.add('show');
@@ -21,13 +20,9 @@ items.forEach((item) => {
           trigger: item,
           start: 'top center',
           end: 'bottom bottom',
-          markers: true,
           once: true,
           onEnter: () => {
             item.classList.add('show');
-            console.log('====================================');
-            console.log("dada");
-            console.log('====================================');
           },
         }
       });

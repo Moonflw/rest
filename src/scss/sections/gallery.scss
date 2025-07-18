@@ -55,7 +55,8 @@
 .gallery-left,
 .gallery-right {
   flex: 1;
-  transform: translateX(-110%);
+  opacity: 0;
+  transform: translateX(150%);
   transition: opacity 0.5s ease, transform 0.5s ease;
   
 }
